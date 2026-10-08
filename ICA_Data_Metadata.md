@@ -88,6 +88,7 @@ customer), `ACCxxxxx`, `INTxxxxx`.
 | 4 | ≥ 90 | **default** |
 
 Contoh: bulan ini DPD 0, bulan depan DPD 12 → bucket 0 → 1 → `deterioration_next_1m = 1`.
+•	Sumber Regulasi Resmi OJK: POJK Nomor 40/POJK.03/2019 tentang Penilaian Kualitas Aset Bank Umum. Tautan: https://www.ojk.go.id/id/regulasi/Pages/Penilaian-Kualitas-Aset-Bank-Umum.aspx  (Salinan Dokumen: https://www.ojk.go.id/id/regulasi/Documents/Pages/Penilaian-Kualitas-Aset-Bank-Umum/POJK%2040%20-%20Kualitas%20Aset.pdf )
 
 **Konsistensi yang dijamin generator (bisa diverifikasi):**
 - Semua `default_12m = 1` punya akun hasil aplikasi berstatus `Default` dengan `days_past_due ≥ 90`. Semua `default_12m = 0` tidak pernah mencapai DPD 90.
