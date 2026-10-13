@@ -1,0 +1,2 @@
+model,invalid_rate,flag_rate,latency_s,throughput_per_min,mean_label_accuracy,mean_label_accuracy_form,exact_match,recall_llm,recall_truth,precision_llm,pr_auc_llm,recall_gap
+gemma4-12b,0.0,0.0,2.3708550333976746,25.304008354592153,0.9558333333333334,0.9558333333333333,0.735,0.391304347826087,0.43478260869565216,0.21428571428571427,0.2964482494462938,-0.04347826086956519

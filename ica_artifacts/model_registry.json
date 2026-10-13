@@ -1,0 +1,69 @@
+{
+  "run_id": "20261013-024200-f66d89",
+  "created": "2026-10-13 03:01",
+  "xgb_device": "cuda",
+  "tasks": {
+    "cr_new": {
+      "model": "LogReg",
+      "feature_set": "fe",
+      "threshold": 0.5357430412621937,
+      "calibration": {
+        "a": 1.2439728532973393,
+        "b": -1.9678223833142727
+      },
+      "file": "model_cr_new.joblib",
+      "test_metrics": {
+        "roc_auc": 0.8091435115424026,
+        "pr_auc": 0.40705127297154264,
+        "recall@0.5": 0.6595744680851063,
+        "recall_f2": 0.574468085106383,
+        "recall": 0.574468085106383,
+        "precision": 0.2903225806451613,
+        "f1": 0.38571428571428573,
+        "f2": 0.4804270462633452
+      }
+    },
+    "cr_existing": {
+      "model": "LogReg",
+      "feature_set": "fe",
+      "threshold": 0.5094887331330085,
+      "calibration": {
+        "a": 1.038469722572085,
+        "b": -2.291860088315634
+      },
+      "file": "model_cr_existing.joblib",
+      "test_metrics": {
+        "roc_auc": 0.8107142857142857,
+        "pr_auc": 0.3438435481604846,
+        "recall@0.5": 0.7071428571428572,
+        "recall_f2": 0.6214285714285714,
+        "recall": 0.7,
+        "precision": 0.22528735632183908,
+        "f1": 0.3408695652173913,
+        "f2": 0.49246231155778897
+      }
+    },
+    "ew": {
+      "model": "XGBoost",
+      "feature_set": "fe",
+      "threshold": 0.4708998501300812,
+      "calibration": {
+        "a": 1.0456456294074106,
+        "b": -2.228806420908425
+      },
+      "file": "model_ew.joblib",
+      "test_metrics": {
+        "roc_auc": 0.7753837110663196,
+        "pr_auc": 0.3335670673190041,
+        "recall@0.5": 0.6644834772253647,
+        "recall_f2": 0.656147662994939,
+        "recall": 0.699910687704674,
+        "precision": 0.20342649476507743,
+        "f1": 0.31523196567444356,
+        "f2": 0.4703316928740047
+      }
+    }
+  },
+  "threshold_policy": "recall-first: OOF recall \u2265 0.7",
+  "ew_pd_given_deterioration": 0.1263286004056795
+}

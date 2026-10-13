@@ -1,0 +1,7 @@
+model,label,accuracy,macro_f1
+gemma4-12b,income_trend,0.99,0.9800242130750605
+gemma4-12b,income_stability,0.79,0.8162026740291944
+gemma4-12b,existing_debt_level,0.965,0.9509260862039121
+gemma4-12b,repayment_issue,1.0,1.0
+gemma4-12b,financial_change,1.0,1.0
+gemma4-12b,business_condition,0.99,0.9905637254901961
